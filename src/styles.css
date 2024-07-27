@@ -1,5 +1,6 @@
 .backgroundImage {
-  background-image: url("./gameAssets/Background.jpg");
+  background-image: var(--background-url);
+  /* background-image: url("./gameAssets/Background.jpg"); */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

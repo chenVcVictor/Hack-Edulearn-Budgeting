@@ -15,11 +15,16 @@ function GamePage() {
   const [intelligence, setIntelligence] = React.useState(0);
   const [health, setHealth] = React.useState(0);
   const [age, setAge] = React.useState(0);
-  const [money, setMoney] = React.useState(0);
+  const [money, setMoney] = React.useState(10000);
 
   return (
     <>
-      <Box className="backgroundImage">
+      <Box
+        className="backgroundImage"
+        sx={{
+          "--background-url": `url(${backgroundUrl})`,
+        }}
+      >
         <Grid container className="gridContainer">
           {/* left side */}
           <Grid
@@ -32,6 +37,7 @@ function GamePage() {
               height: "100%",
             }}
           >
+            {/* Age */}
             <Typography variant="h6"> Age: {age}</Typography>
             {/* spacing */}
             <Box sx={{ height: "40px" }} />
@@ -44,7 +50,6 @@ function GamePage() {
             <Typography>Health: </Typography>
             <StatsProgressBar value={health} />
             {/* Money Amount */}
-            {/* Nested Grid for C and D */}
             <Box
               sx={{
                 display: "flex",
@@ -78,9 +83,12 @@ function GamePage() {
             }}
           >
             {/* middle */}
+            {/* Game Logo */}
             <Box>
               <img src={gameLogoUrl} alt="The Budget Challenge" />
             </Box>
+
+            {/* Age Up */}
             <Button
               disableRipple
               className="ageUpButton"

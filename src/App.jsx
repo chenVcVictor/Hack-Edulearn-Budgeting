@@ -1,8 +1,11 @@
 import * as React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import { CssBaseline, Box } from "@mui/material";
 import GamePage from "./pages/GamePage";
+import LandingPage from "./pages/LandingPage";
+import InstructionsPage from "./pages/InstructionsPage";
 
 const theme = createTheme({
   typography: {
@@ -28,9 +31,15 @@ function App() {
   return (
     <>
       <ThemeProvider theme={theme}>
+        <CssBaseline />
         <Box sx={{ overflowX: "hidden" }}>
-          <CssBaseline />
-          <GamePage />
+          <Router>
+            <Routes>
+              <Route path="" element={<LandingPage />} />
+              <Route path="/instructions" element={<InstructionsPage />} />
+              <Route path="/game" element={<GamePage />} />
+            </Routes>
+          </Router>
         </Box>
       </ThemeProvider>
     </>
