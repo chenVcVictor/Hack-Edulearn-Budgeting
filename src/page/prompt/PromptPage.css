@@ -1,0 +1,24 @@
+.box-container{
+    background-color:var(--main-background-color);
+    border-color: var(--main-border-color);
+    border-radius: 3%;
+    height: 70vh;
+    width: 120vh;
+}
+
+.text-container{
+    /* border: 3px solid green; */
+    padding-top: 30px;
+    text-align: center;
+    font-weight: 20px;
+}
+
+.selection-container{
+    /* border: 3px solid green; */
+
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 8%;
+    padding: 10%;
+    display: flex;
+}
