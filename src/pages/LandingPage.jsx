@@ -8,7 +8,7 @@ import { Link as RouterLink } from "react-router-dom";
 function LandingPage() {
   const backgroundUrl = "./gameAssets/CityNightBackground.jpg";
   const gameLogoUrl = "./gameAssets/BudgetChallengeIcon.png";
-  const playButtonUrl = "./gameAssets/PlayButton.png";
+  const startButtonUrl = "./gameAssets/StartButton.png";
 
   return (
     <Box
@@ -21,7 +21,7 @@ function LandingPage() {
         flexDirection: "column",
       }}
     >
-      <Box sx={{ padding: "10px", marginBottom: "60px" }}>
+      <Box className="gameLogo" sx={{ padding: "10px", marginBottom: "60px" }}>
         <img
           src={gameLogoUrl}
           alt="The Budget Challenge"
@@ -30,7 +30,7 @@ function LandingPage() {
       </Box>
       <Link component={RouterLink} to="/instructions">
         <Button disableRipple className="ageUpButton">
-          <img src={playButtonUrl} alt="Play" />
+          <img src={startButtonUrl} alt="Play" />
         </Button>
       </Link>
     </Box>
