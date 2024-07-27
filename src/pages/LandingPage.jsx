@@ -28,8 +28,8 @@ function LandingPage() {
           style={{ width: "600px", height: "auto" }}
         />
       </Box>
-      <Link component={RouterLink} to="/instructions">
-        <Button disableRipple className="ageUpButton">
+      <Link component={RouterLink} to="/instructions" className="ageUpButton">
+        <Button disableRipple>
           <img src={startButtonUrl} alt="Play" />
         </Button>
       </Link>

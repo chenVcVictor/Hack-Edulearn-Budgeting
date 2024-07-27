@@ -37,8 +37,8 @@ function InstructionsPage() {
       >
         {instructionsText}
       </Typography>
-      <Link component={RouterLink} to="/game">
-        <Button disableRipple className="ageUpButton">
+      <Link component={RouterLink} to="/game" className="ageUpButton">
+        <Button disableRipple>
           <img src={playButtonUrl} alt="Play" />
         </Button>
       </Link>
