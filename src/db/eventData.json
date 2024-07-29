@@ -1,0 +1,107 @@
+{
+  "Books": {
+    "option1": {
+      "imgUrl": "",
+      "description": "Buy new textbooks",
+      "money": -200,
+      "health": 0,
+      "intelligence": 3,
+      "happiness": 0,
+      "isRecurring": true
+    },
+    "option2": {
+      "imgUrl": "",
+      "description": "Buy used textbooks",
+      "money": -120,
+      "health": 0,
+      "intelligence": 3,
+      "happiness": 0,
+      "isRecurring": true
+    },
+    "option3": {
+      "imgUrl": "",
+      "description": "Rent textbooks",
+      "money": -80,
+      "health": 0,
+      "intelligence": 3,
+      "Happiness": 0,
+      "isRecurring": true
+    },
+    "option4": {
+      "imgUrl": "",
+      "description": "Don't buy Textbook",
+      "money": 0,
+      "health": 0,
+      "intelligence": -3,
+      "Happiness": 0,
+      "isRecurring": true
+    }
+  },
+  "Jobs": {
+    "option1": {
+      "imgUrl": "",
+      "description": "Work 40 hrs/wk",
+      "money": 13000,
+      "health": -8,
+      "intelligence": 0,
+      "happiness": -8,
+      "isRecurring": true
+    },
+    "option2": {
+      "imgUrl": "",
+      "description": "Work Part-Time  20 hrs/wk",
+      "money": 6500,
+      "health": -4,
+      "intelligence": 0,
+      "happiness": -4,
+      "isRecurring": true
+    },
+    "option3": {
+      "imgUrl": "",
+      "description": "Work Part-Time 10 hours a wk",
+      "money": 3250,
+      "health": -1,
+      "intelligence": 0,
+      "happiness": -1,
+      "isRecurring": true
+    },
+    "option4": {
+      "imgUrl": "",
+      "description": "Work Part-Time Don't work",
+      "money": 0,
+      "health": 0,
+      "intelligence": 0,
+      "happiness": 0,
+      "isRecurring": true
+    }
+  },
+  "Transportation": {
+    "option1": {
+      "imgUrl": "",
+      "description": "Ride the Bus to Class",
+      "money": -173,
+      "health": -2,
+      "intelligence": 0,
+      "happiness": 0,
+      "isRecurring": true
+    },
+    "option2": {
+      "imgUrl": "",
+      "description": "Bike to Class",
+      "money": 6500,
+      "health": 2,
+      "intelligence": 0,
+      "happiness": 0,
+      "isRecurring": true
+    },
+    "option3": {
+      "imgUrl": "",
+      "description": "Walk to Class",
+      "money": 0,
+      "health": 2,
+      "intelligence": 0,
+      "happiness": 0,
+      "isRecurring": true
+    }
+  }
+}

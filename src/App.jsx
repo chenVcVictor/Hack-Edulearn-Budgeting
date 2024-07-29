@@ -6,6 +6,7 @@ import { CssBaseline, Box } from "@mui/material";
 import GamePage from "./pages/GamePage";
 import LandingPage from "./pages/LandingPage";
 import InstructionsPage from "./pages/InstructionsPage";
+import PromptPage from "./page/prompt/PromptPage";
 
 const theme = createTheme({
   typography: {
@@ -30,6 +31,7 @@ function App() {
 
   return (
     <>
+      <PromptPage />
       <ThemeProvider theme={theme}>
         <CssBaseline />
         <Box sx={{ overflowX: "hidden" }}>

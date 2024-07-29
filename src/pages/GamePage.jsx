@@ -5,17 +5,25 @@ import "/src/styles.css";
 import { Box, Grid, Typography, Button, LinearProgress } from "@mui/material";
 import StatsProgressBar from "../components/StatsProgressBar";
 
+import PromptPage from "../page/prompt/PromptPage";
+
 function GamePage() {
   const backgroundUrl = "./gameAssets/Background.jpg";
   const ageUpButtonUrl = "./gameAssets/AgeUpButton.png";
   const gameLogoUrl = "./gameAssets/BudgetChallengeIcon.png";
   const moneyIconUrl = "./gameAssets/MoneyIcon.png";
 
+  const randomStartAmount = (min, max) => {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+  };
+
   const [happiness, setHappiness] = React.useState(50);
   const [intelligence, setIntelligence] = React.useState(0);
   const [health, setHealth] = React.useState(0);
-  const [age, setAge] = React.useState(0);
-  const [money, setMoney] = React.useState(10000);
+  const [year, setYear] = React.useState(1);
+  const [money, setMoney] = React.useState(() =>
+    randomStartAmount(5000, 50000)
+  );
 
   return (
     <>
@@ -38,7 +46,7 @@ function GamePage() {
             }}
           >
             {/* Age */}
-            <Typography variant="h6"> Age: {age}</Typography>
+            <Typography variant="h6"> Year: {year}</Typography>
             {/* spacing */}
             <Box sx={{ height: "40px" }} />
             {/* Statistics */}
@@ -93,13 +101,14 @@ function GamePage() {
               disableRipple
               className="ageUpButton"
               onClick={() => {
-                setAge((prevAge) => prevAge + 1);
+                setYear((prevYear) => prevYear + 1);
               }}
             >
               <img src={ageUpButtonUrl} alt="Age Up" />
             </Button>
           </Grid>
         </Grid>
+        <PromptPage />
       </Box>
     </>
   );
