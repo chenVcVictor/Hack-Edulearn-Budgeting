@@ -1,0 +1,12 @@
+{
+  "Books": {
+    "option1": {
+      "imgUrl": "(str)",
+      "description": "buy new (str)",
+      "cost": -300,
+      "Health": 3,
+      "Intelligence": 3,
+      "Happiness": 3
+    }
+  }
+}
