@@ -49,7 +49,7 @@
     },
     "option2": {
       "imgUrl": "",
-      "description": "Work Part-Time  20 hrs/wk",
+      "description": "Work 20 hrs/wk",
       "money": 6500,
       "health": -4,
       "intelligence": 0,
@@ -58,7 +58,7 @@
     },
     "option3": {
       "imgUrl": "",
-      "description": "Work Part-Time 10 hours a wk",
+      "description": "Work 10/wk",
       "money": 3250,
       "health": -1,
       "intelligence": 0,
@@ -67,7 +67,7 @@
     },
     "option4": {
       "imgUrl": "",
-      "description": "Work Part-Time Don't work",
+      "description": "Don't work",
       "money": 0,
       "health": 0,
       "intelligence": 0,
