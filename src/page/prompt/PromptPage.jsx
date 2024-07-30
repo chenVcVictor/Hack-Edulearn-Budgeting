@@ -24,6 +24,8 @@ function generateRandomEvents(data, numEvents) {
   return randomizedEvents.slice(0, numEvents);
 }
 
+const events = generateRandomEvents(allEvents, 4);
+
 function PromptPage({
   onClose,
   setMoney,
@@ -31,7 +33,6 @@ function PromptPage({
   setIntelligence,
   setHealth,
 }) {
-  const events = generateRandomEvents(allEvents, 4);
   return (
     <div className="box-container">
       <div className="button-wrapper">
