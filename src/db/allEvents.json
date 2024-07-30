@@ -1,123 +1,123 @@
-[
-  {
-    "id": 1,
-    "imgUrl": "",
-    "topic": "Textbook",
-    "description": "Buy new textbooks",
-    "money": -200,
-    "health": 0,
-    "intelligence": 3,
-    "happiness": 0,
-    "isRecurring": true
-  },
-  {
-    "id": 2,
-    "imgUrl": "",
-    "topic": "Textbook",
-    "description": "Buy used textbooks",
-    "money": -120,
-    "health": 0,
-    "intelligence": 3,
-    "happiness": 0,
-    "isRecurring": true
-  },
-  {
-    "id": 3,
-    "imgUrl": "",
-    "topic": "Textbook",
-    "description": "Rent textbooks",
-    "money": -80,
-    "health": 0,
-    "intelligence": 3,
-    "happiness": 0,
-    "isRecurring": true
-  },
-  {
-    "id": 4,
-    "imgUrl": "",
-    "topic": "Textbook",
-    "description": "Don't buy Textbook",
-    "money": 0,
-    "health": 0,
-    "intelligence": -3,
-    "happiness": 0,
-    "isRecurring": true
-  },
-  {
-    "id": 5,
-    "imgUrl": "",
-    "topic": "Job",
-    "description": "Work 40 hr/wk",
-    "money": 13000,
-    "health": -8,
-    "intelligence": 0,
-    "happiness": -8,
-    "isRecurring": true
-  },
-  {
-    "id": 6,
-    "imgUrl": "",
-    "topic": "Job",
-    "description": "Work 20 hr/wk",
-    "money": 6500,
-    "health": -4,
-    "intelligence": 0,
-    "happiness": -4,
-    "isRecurring": true
-  },
-  {
-    "id": 7,
-    "imgUrl": "",
-    "topic": "Job",
-    "description": "Work 10 hr/week",
-    "money": 3250,
-    "health": -1,
-    "intelligence": 0,
-    "happiness": -1,
-    "isRecurring": true
-  },
-  {
-    "id": 8,
-    "imgUrl": "",
-    "topic": "Job",
-    "description": "Don't Work",
-    "money": 0,
-    "health": 0,
-    "intelligence": 0,
-    "happiness": 0,
-    "isRecurring": true
-  },
-  {
-    "id": 9,
-    "imgUrl": "",
-    "topic": "Transportation",
-    "description": "Bus to Class",
-    "money": -173,
-    "health": -2,
-    "intelligence": 0,
-    "happiness": 0,
-    "isRecurring": true
-  },
-  {
-    "id": 10,
-    "imgUrl": "",
-    "topic": "Transportation",
-    "description": "Bike to Class",
-    "money": 6500,
-    "health": 2,
-    "intelligence": 0,
-    "happiness": 0,
-    "isRecurring": true
-  },
-  {
-    "id": 11,
-    "imgUrl": "",
-    "topic": "Transportation",
-    "description": "Walk to Class",
-    "money": 0,
-    "health": 2,
-    "intelligence": 0,
-    "happiness": 0,
-    "isRecurring": true
+{
+  "1": {
+    "Scenario1": [
+        {
+          "id": 1,
+          "imgUrl": "",
+          "topic": "Textbook",
+          "description": "Buy new textbooks",
+          "money": -200,
+          "health": 0,
+          "intelligence": 3,
+          "happiness": 0
+        },
+        {
+          "id": 2,
+          "imgUrl": "",
+          "topic": "Textbook",
+          "description": "Buy used textbooks",
+          "money": -120,
+          "health": 0,
+          "intelligence": 3,
+          "happiness": 0
+        },
+        {
+          "id": 3,
+          "imgUrl": "",
+          "topic": "Textbook",
+          "description": "Rent textbooks",
+          "money": -80,
+          "health": 0,
+          "intelligence": 3,
+          "happiness": 0
+        },
+        {
+          "id": 4,
+          "imgUrl": "",
+          "topic": "Textbook",
+          "description": "Don't buy Textbook",
+          "money": 0,
+          "health": 0,
+          "intelligence": -3,
+          "happiness": 0,
+          "isRecurring": true
+        }
+      ],
+    "Scenario2": [
+      {
+        "id": 2,
+        "imgUrl": "",
+        "topic": "Job",
+        "description": "Work 40 hr/wk",
+        "money": 13000,
+        "health": -8,
+        "intelligence": 0,
+        "happiness": -8
+      },
+      {
+        "id": 3,
+        "imgUrl": "",
+        "topic": "Job",
+        "description": "Work 20 hr/wk",
+        "money": 6500,
+        "health": -4,
+        "intelligence": 0,
+        "happiness": -4
+      },
+      {
+        "id": 4,
+        "imgUrl": "",
+        "topic": "Job",
+        "description": "Work 10 hr/week",
+        "money": 3250,
+        "health": -1,
+        "intelligence": 0,
+        "happiness": -1
+      },
+      {
+        "id": 8,
+        "imgUrl": "",
+        "topic": "Job",
+        "description": "Don't Work",
+        "money": 0,
+        "health": 0,
+        "intelligence": 0,
+        "happiness": 0
+      }
+    ],
+    "Scenario3" : [
+      {
+        "id": 1,
+        "imgUrl": "",
+        "topic": "Transportation",
+        "description": "Bus to Class",
+        "money": -173,
+        "health": -2,
+        "intelligence": 0,
+        "happiness": 0
+      },
+      {
+        "id": 2,
+        "imgUrl": "",
+        "topic": "Transportation",
+        "description": "Bike to Class",
+        "money": 6500,
+        "health": 2,
+        "intelligence": 0,
+        "happiness": 0
+      },
+      {
+        "id": 3,
+        "imgUrl": "",
+        "topic": "Transportation",
+        "description": "Walk to Class",
+        "money": 0,
+        "health": 2,
+        "intelligence": 0,
+        "happiness": 0
+      }
+    ],
+  "2": {
+    "Scenario1": []
   }
-]
+}
