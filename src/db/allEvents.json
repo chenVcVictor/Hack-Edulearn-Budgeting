@@ -1,51 +1,51 @@
 {
-  "1": {
+  "Year1": {
     "Scenario1": [
-        {
-          "id": 1,
-          "imgUrl": "",
-          "topic": "Textbook",
-          "description": "Buy new textbooks",
-          "money": -200,
-          "health": 0,
-          "intelligence": 3,
-          "happiness": 0
-        },
-        {
-          "id": 2,
-          "imgUrl": "",
-          "topic": "Textbook",
-          "description": "Buy used textbooks",
-          "money": -120,
-          "health": 0,
-          "intelligence": 3,
-          "happiness": 0
-        },
-        {
-          "id": 3,
-          "imgUrl": "",
-          "topic": "Textbook",
-          "description": "Rent textbooks",
-          "money": -80,
-          "health": 0,
-          "intelligence": 3,
-          "happiness": 0
-        },
-        {
-          "id": 4,
-          "imgUrl": "",
-          "topic": "Textbook",
-          "description": "Don't buy Textbook",
-          "money": 0,
-          "health": 0,
-          "intelligence": -3,
-          "happiness": 0,
-          "isRecurring": true
-        }
-      ],
-    "Scenario2": [
+      {
+        "id": 1,
+        "imgUrl": "",
+        "topic": "Textbook",
+        "description": "Buy new textbooks",
+        "money": -200,
+        "health": 0,
+        "intelligence": 3,
+        "happiness": 0
+      },
       {
         "id": 2,
+        "imgUrl": "",
+        "topic": "Textbook",
+        "description": "Buy used textbooks",
+        "money": -120,
+        "health": 0,
+        "intelligence": 3,
+        "happiness": 0
+      },
+      {
+        "id": 3,
+        "imgUrl": "",
+        "topic": "Textbook",
+        "description": "Rent textbooks",
+        "money": -80,
+        "health": 0,
+        "intelligence": 3,
+        "happiness": 0
+      },
+      {
+        "id": 4,
+        "imgUrl": "",
+        "topic": "Textbook",
+        "description": "Don't buy textbooks",
+        "money": 0,
+        "health": 0,
+        "intelligence": -3,
+        "happiness": 0,
+        "isRecurring": true
+      }
+    ],
+    "Scenario2": [
+      {
+        "id": 1,
         "imgUrl": "",
         "topic": "Job",
         "description": "Work 40 hr/wk",
@@ -55,7 +55,7 @@
         "happiness": -8
       },
       {
-        "id": 3,
+        "id": 2,
         "imgUrl": "",
         "topic": "Job",
         "description": "Work 20 hr/wk",
@@ -65,139 +65,142 @@
         "happiness": -4
       },
       {
-        "id": 4,
+        "id": 3,
         "imgUrl": "",
         "topic": "Job",
-        "description": "Work 10 hr/week",
+        "description": "Work 10 hr/wk",
         "money": 3250,
         "health": -1,
         "intelligence": 0,
         "happiness": -1
       },
       {
-        "id": 8,
+        "id": 4,
         "imgUrl": "",
         "topic": "Job",
-        "description": "Don't Work",
+        "description": "Don't work",
         "money": 0,
         "health": 0,
         "intelligence": 0,
         "happiness": 0
       }
     ],
-    "Scenario3" : [
+    "Scenario3": [
       {
         "id": 1,
         "imgUrl": "",
-        "topic": "Transportation",
-        "description": "Bus to Class",
-        "money": -173,
+        "topic": "Meal Plan",
+        "description": "Purchase full meal plan",
+        "money": -1500,
+        "health": 5,
+        "intelligence": 0,
+        "happiness": 5
+      },
+      {
+        "id": 2,
+        "imgUrl": "",
+        "topic": "Meal Plan",
+        "description": "Purchase partial meal plan",
+        "money": -800,
+        "health": 3,
+        "intelligence": 0,
+        "happiness": 3
+      },
+      {
+        "id": 3,
+        "imgUrl": "",
+        "topic": "Meal Plan",
+        "description": "Cook own meals",
+        "money": -400,
+        "health": 2,
+        "intelligence": 0,
+        "happiness": 2
+      },
+      {
+        "id": 4,
+        "imgUrl": "",
+        "topic": "Meal Plan",
+        "description": "Don't buy meal plan",
+        "money": 0,
+        "health": -3,
+        "intelligence": 0,
+        "happiness": -3,
+        "isRecurring": true
+      }
+    ]
+  },
+  "Year2": {
+    "Scenario1": [
+      {
+        "id": 1,
+        "imgUrl": "",
+        "topic": "Housing",
+        "description": "Live on-campus",
+        "money": -5000,
+        "health": 3,
+        "intelligence": 0,
+        "happiness": 5
+      },
+      {
+        "id": 2,
+        "imgUrl": "",
+        "topic": "Housing",
+        "description": "Live off-campus with roommates",
+        "money": -3000,
+        "health": 2,
+        "intelligence": 0,
+        "happiness": 4
+      },
+      {
+        "id": 3,
+        "imgUrl": "",
+        "topic": "Housing",
+        "description": "Live off-campus alone",
+        "money": -4000,
+        "health": 1,
+        "intelligence": 0,
+        "happiness": 3
+      },
+      {
+        "id": 4,
+        "imgUrl": "",
+        "topic": "Housing",
+        "description": "Live at home",
+        "money": 0,
+        "health": 0,
+        "intelligence": 0,
+        "happiness": -1,
+        "isRecurring": true
+      }
+    ],
+    "Scenario2": [
+      {
+        "id": 1,
+        "imgUrl": "",
+        "topic": "Internship",
+        "description": "Intern unpaid",
+        "money": 0,
         "health": -2,
-        "intelligence": 0,
-        "happiness": 0
+        "intelligence": 4,
+        "happiness": -1
       },
       {
         "id": 2,
         "imgUrl": "",
-        "topic": "Transportation",
-        "description": "Bike to Class",
-        "money": 6500,
-        "health": 2,
-        "intelligence": 0,
-        "happiness": 0
+        "topic": "Internship",
+        "description": "Intern paid",
+        "money": 5000,
+        "health": -3,
+        "intelligence": 4,
+        "happiness": 2
       },
       {
         "id": 3,
         "imgUrl": "",
-        "topic": "Transportation",
-        "description": "Walk to Class",
+        "topic": "Internship",
+        "description": "No internship",
         "money": 0,
-        "health": 2,
-        "intelligence": 0,
-        "happiness": 0
-      }
-    ],
-  "2": {
-    "Scenario1": [
-      {
-        "id": 1,
-        "imgUrl": "",
-        "topic": "Food",
-        "description": "Order take out",
-        "money": 0,
-        "health": 2,
-        "intelligence": 0,
-        "happiness": 0
-      },
-      {
-        "id": 2,
-        "imgUrl": "",
-        "topic": "Food",
-        "description": "Eat at restaurant",
-        "money": 0,
-        "health": 2,
-        "intelligence": 0,
-        "happiness": 0
-      },
-      {
-        "id": 3,
-        "imgUrl": "",
-        "topic": "Food",
-        "description": "Eat at home",
-        "money": 0,
-        "health": 2,
-        "intelligence": 0,
-        "happiness": 0
-      },
-      {
-        "id": 4,
-        "imgUrl": "",
-        "topic": "Food",
-        "description": "School food",
-        "money": 0,
-        "health": 2,
-        "intelligence": 0,
-        "happiness": 0
-      }
-    ],
-    "Scenario2": [
-      {
-        "id": 1,
-        "imgUrl": "",
-        "topic": "Dating",
-        "description": "Expensive dating",
-        "money": 0,
-        "health": 2,
-        "intelligence": 0,
-        "happiness": 0
-      },
-      {
-        "id": 2,
-        "imgUrl": "",
-        "topic": "Dating",
-        "description": "Affortable dating",
-        "money": 0,
-        "health": 2,
-        "intelligence": 0,
-        "happiness": 0
-      },
-      {
-        "id": 3,
-        "imgUrl": "",
-        "topic": "Dating",
-        "description": "Budget tight dating",
-        "money": 0,
-        "health": 2,
-        "intelligence": 0,
-        "happiness": 0
-      },
-      {
-        "id": 4,
-        "imgUrl": "",
-        "topic": "Dating",
-        "description": "No dating",
-        "money": 0,
-        "health": 2,
+        "health": 0,
         "intelligence": 0,
         "happiness": 0
       }
@@ -206,299 +209,262 @@
       {
         "id": 1,
         "imgUrl": "",
-        "topic": "Hobbies",
-        "description": "Gaming",
-        "money": 0,
-        "health": 2,
-        "intelligence": 0,
-        "happiness": 0
+        "topic": "Study Abroad",
+        "description": "Study abroad for a semester",
+        "money": -7000,
+        "health": 0,
+        "intelligence": 5,
+        "happiness": 5
       },
       {
         "id": 2,
         "imgUrl": "",
-        "topic": "Hobbies",
-        "description": "Art",
-        "money": 0,
-        "health": 2,
-        "intelligence": 0,
-        "happiness": 0
+        "topic": "Study Abroad",
+        "description": "Participate in a summer program abroad",
+        "money": -3000,
+        "health": 0,
+        "intelligence": 4,
+        "happiness": 4
       },
       {
         "id": 3,
         "imgUrl": "",
-        "topic": "Hobbies",
-        "description": "Club",
+        "topic": "Study Abroad",
+        "description": "Study locally",
         "money": 0,
-        "health": 2,
-        "intelligence": 0,
-        "happiness": 0
-      },
-      {
-        "id": 4,
-        "imgUrl": "",
-        "topic": "Hobbies",
-        "description": "No hobbies",
-        "money": 0,
-        "health": 2,
-        "intelligence": 0,
-        "happiness": 0
-      }
-    ],
-  "3": {
-    "Scenario1": [
-      {
-        "id": 1,
-        "imgUrl": "",
-        "topic": "",
-        "description": "",
-        "money": 0,
-        "health": 2,
-        "intelligence": 0,
-        "happiness": 0
-      },
-      {
-        "id": 2,
-        "imgUrl": "",
-        "topic": "",
-        "description": "",
-        "money": 0,
-        "health": 2,
-        "intelligence": 0,
-        "happiness": 0
-      },
-      {
-        "id": 3,
-        "imgUrl": "",
-        "topic": "",
-        "description": "",
-        "money": 0,
-        "health": 2,
-        "intelligence": 0,
-        "happiness": 0
-      },
-      {
-        "id": 4,
-        "imgUrl": "",
-        "topic": "",
-        "description": "",
-        "money": 0,
-        "health": 2,
-        "intelligence": 0,
-        "happiness": 0
-      }
-    ],
-    "Scenario2": [
-      {
-        "id": 1,
-        "imgUrl": "",
-        "topic": "",
-        "description": "",
-        "money": 0,
-        "health": 2,
-        "intelligence": 0,
-        "happiness": 0
-      },
-      {
-        "id": 2,
-        "imgUrl": "",
-        "topic": "",
-        "description": "",
-        "money": 0,
-        "health": 2,
-        "intelligence": 0,
-        "happiness": 0
-      },
-      {
-        "id": 3,
-        "imgUrl": "",
-        "topic": "",
-        "description": "",
-        "money": 0,
-        "health": 2,
-        "intelligence": 0,
-        "happiness": 0
-      },
-      {
-        "id": 4,
-        "imgUrl": "",
-        "topic": "",
-        "description": "",
-        "money": 0,
-        "health": 2,
-        "intelligence": 0,
-        "happiness": 0
-      }
-    ],
-    "Scenario3": [
-      {
-        "id": 1,
-        "imgUrl": "",
-        "topic": "",
-        "description": "",
-        "money": 0,
-        "health": 2,
-        "intelligence": 0,
-        "happiness": 0
-      },
-      {
-        "id": 2,
-        "imgUrl": "",
-        "topic": "",
-        "description": "",
-        "money": 0,
-        "health": 2,
-        "intelligence": 0,
-        "happiness": 0
-      },
-      {
-        "id": 3,
-        "imgUrl": "",
-        "topic": "",
-        "description": "",
-        "money": 0,
-        "health": 2,
-        "intelligence": 0,
-        "happiness": 0
-      },
-      {
-        "id": 4,
-        "imgUrl": "",
-        "topic": "",
-        "description": "",
-        "money": 0,
-        "health": 2,
-        "intelligence": 0,
-        "happiness": 0
-      }
-    ],
-  "4": {
-    "Scenario1": [
-      {
-        "id": 1,
-        "imgUrl": "",
-        "topic": "",
-        "description": "",
-        "money": 0,
-        "health": 2,
-        "intelligence": 0,
-        "happiness": 0
-      },
-      {
-        "id": 2,
-        "imgUrl": "",
-        "topic": "",
-        "description": "",
-        "money": 0,
-        "health": 2,
-        "intelligence": 0,
-        "happiness": 0
-      },
-      {
-        "id": 3,
-        "imgUrl": "",
-        "topic": "",
-        "description": "",
-        "money": 0,
-        "health": 2,
-        "intelligence": 0,
-        "happiness": 0
-      },
-      {
-        "id": 4,
-        "imgUrl": "",
-        "topic": "",
-        "description": "",
-        "money": 0,
-        "health": 2,
-        "intelligence": 0,
-        "happiness": 0
-      }
-    ],
-    "Scenario2": [
-      {
-        "id": 1,
-        "imgUrl": "",
-        "topic": "",
-        "description": "",
-        "money": 0,
-        "health": 2,
-        "intelligence": 0,
-        "happiness": 0
-      },
-      {
-        "id": 2,
-        "imgUrl": "",
-        "topic": "",
-        "description": "",
-        "money": 0,
-        "health": 2,
-        "intelligence": 0,
-        "happiness": 0
-      },
-      {
-        "id": 3,
-        "imgUrl": "",
-        "topic": "",
-        "description": "",
-        "money": 0,
-        "health": 2,
-        "intelligence": 0,
-        "happiness": 0
-      },
-      {
-        "id": 4,
-        "imgUrl": "",
-        "topic": "",
-        "description": "",
-        "money": 0,
-        "health": 2,
-        "intelligence": 0,
-        "happiness": 0
-      }
-    ],
-    "Scenario3": [
-      {
-        "id": 1,
-        "imgUrl": "",
-        "topic": "",
-        "description": "",
-        "money": 0,
-        "health": 2,
-        "intelligence": 0,
-        "happiness": 0
-      },
-      {
-        "id": 2,
-        "imgUrl": "",
-        "topic": "",
-        "description": "",
-        "money": 0,
-        "health": 2,
-        "intelligence": 0,
-        "happiness": 0
-      },
-      {
-        "id": 3,
-        "imgUrl": "",
-        "topic": "",
-        "description": "",
-        "money": 0,
-        "health": 2,
-        "intelligence": 0,
-        "happiness": 0
-      },
-      {
-        "id": 4,
-        "imgUrl": "",
-        "topic": "",
-        "description": "",
-        "money": 0,
-        "health": 2,
+        "health": 0,
         "intelligence": 0,
         "happiness": 0
       }
     ]
-  }
-  }
+  },
+  "Year3": {
+    "Scenario1": [
+      {
+        "id": 1,
+        "imgUrl": "",
+        "topic": "Extracurricular Activities",
+        "description": "Join a sports team",
+        "money": -500,
+        "health": 4,
+        "intelligence": 1,
+        "happiness": 4
+      },
+      {
+        "id": 2,
+        "imgUrl": "",
+        "topic": "Extracurricular Activities",
+        "description": "Join a club",
+        "money": -200,
+        "health": 2,
+        "intelligence": 2,
+        "happiness": 3
+      },
+      {
+        "id": 3,
+        "imgUrl": "",
+        "topic": "Extracurricular Activities",
+        "description": "Participate in community service",
+        "money": -100,
+        "health": 3,
+        "intelligence": 1,
+        "happiness": 3
+      },
+      {
+        "id": 4,
+        "imgUrl": "",
+        "topic": "Extracurricular Activities",
+        "description": "Focus solely on academics",
+        "money": 0,
+        "health": 0,
+        "intelligence": 0,
+        "happiness": -2,
+        "isRecurring": true
+      }
+    ],
+    "Scenario2": [
+      {
+        "id": 1,
+        "imgUrl": "",
+        "topic": "Research",
+        "description": "Engage in research project",
+        "money": 0,
+        "health": -1,
+        "intelligence": 5,
+        "happiness": 2
+      },
+      {
+        "id": 2,
+        "imgUrl": "",
+        "topic": "Research",
+        "description": "Assist a professor",
+        "money": 1000,
+        "health": -2,
+        "intelligence": 4,
+        "happiness": 1
+      },
+      {
+        "id": 3,
+        "imgUrl": "",
+        "topic": "Research",
+        "description": "No research involvement",
+        "money": 0,
+        "health": 0,
+        "intelligence": 0,
+        "happiness": 0
+      }
+    ],
+    "Scenario3": [
+      {
+        "id": 1,
+        "imgUrl": "",
+        "topic": "Summer Plans",
+        "description": "Attend a summer school",
+        "money": -3000,
+        "health": 0,
+        "intelligence": 4,
+        "happiness": 2
+      },
+      {
+        "id": 2,
+        "imgUrl": "",
+        "topic": "Summer Plans",
+        "description": "Travel and explore",
+        "money": -2000,
+        "health": 3,
+        "intelligence": 2,
+        "happiness": 5
+      },
+      {
+        "id": 3,
+        "imgUrl": "",
+        "topic": "Summer Plans",
+        "description": "Work a summer job",
+        "money": 3000,
+        "health": -2,
+        "intelligence": 1,
+        "happiness": 1
+      },
+      {
+        "id": 4,
+        "imgUrl": "",
+        "topic": "Summer Plans",
+        "description": "Relax and take a break",
+        "money": 0,
+        "health": 2,
+        "intelligence": 0,
+        "happiness": 4,
+        "isRecurring": true
+      }
+    ]
+  },
+  "Year4": {
+    "Scenario1": [
+      {
+        "id": 1,
+        "imgUrl": "",
+        "topic": "Graduation",
+        "description": "Plan a graduation party",
+        "money": -1000,
+        "health": 1,
+        "intelligence": 0,
+        "happiness": 5
+      },
+      {
+        "id": 2,
+        "imgUrl": "",
+        "topic": "Graduation",
+        "description": "Attend a formal ceremony",
+        "money": -500,
+        "health": 0,
+        "intelligence": 0,
+        "happiness": 4
+      },
+      {
+        "id": 3,
+        "imgUrl": "",
+        "topic": "Graduation",
+        "description": "Skip the ceremony and party",
+        "money": 0,
+        "health": 0,
+        "intelligence": 0,
+        "happiness": 2
+      }
+    ],
+    "Scenario2": [
+      {
+        "id": 1,
+        "imgUrl": "",
+        "topic": "Job Search",
+        "description": "Apply for full-time positions",
+        "money": 0,
+        "health": -2,
+        "intelligence": 4,
+        "happiness": -1
+      },
+      {
+        "id": 2,
+        "imgUrl": "",
+        "topic": "Job Search",
+        "description": "Attend career fairs",
+        "money": 0,
+        "health": -1,
+        "intelligence": 3,
+        "happiness": 1
+      },
+      {
+        "id": 3,
+        "imgUrl": "",
+        "topic": "Job Search",
+        "description": "Take a gap year to travel or explore",
+        "money": -5000,
+        "health": 2,
+        "intelligence": 2,
+        "happiness": 5
+      }
+    ],
+    "Scenario3": [
+      {
+        "id": 1,
+        "imgUrl": "",
+        "topic": "Further Education",
+        "description": "Enroll in a graduate program",
+        "money": -15000,
+        "health": -1,
+        "intelligence": 5,
+        "happiness": 4
+      },
+      {
+        "id": 2,
+        "imgUrl": "",
+        "topic": "Further Education",
+        "description": "Enroll in a certification course",
+        "money": -3000,
+        "health": 0,
+        "intelligence": 3,
+        "happiness": 2
+      },
+      {
+        "id": 3,
+        "imgUrl": "",
+        "topic": "Further Education",
+        "description": "Enter the workforce immediately",
+        "money": 0,
+        "health": 0,
+        "intelligence": 0,
+        "happiness": 1
+      },
+      {
+        "id": 4,
+        "imgUrl": "",
+        "topic": "Further Education",
+        "description": "Take time off before deciding",
+        "money": 0,
+        "health": 1,
+        "intelligence": 0,
+        "happiness": 3,
+        "isRecurring": true
+      }
+    ]
   }
 }
