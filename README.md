@@ -1,8 +1,19 @@
-# React + Vite
+# The Budgeting Challenge
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+This project is designed to educate prospective and college students in how they manage their money.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Requirements
+
+Ensure you have [Node.js](https://nodejs.org/) installed. You can check your Node.js version with the following command:
+
+```bash
+node -v
+```
+
+# To start clone this repository and run the following command
+```bash
+npm install
+npm start
+```
