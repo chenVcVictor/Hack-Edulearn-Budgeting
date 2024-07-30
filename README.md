@@ -12,8 +12,13 @@ Ensure you have [Node.js](https://nodejs.org/) installed. You can check your Nod
 node -v
 ```
 
-# To start clone this repository and run the following command
+## To start clone this repository and run the following command
 ```bash
 npm install
 npm start
+```
+
+## The url should be 
+```bash
+http://127.0.0.1:5174/
 ```
