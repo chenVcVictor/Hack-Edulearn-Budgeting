@@ -11,20 +11,38 @@ import allEvents from "../../db/allEvents.json";
 import { Button } from "@mui/material";
 
 // shuffle array alg (Fisher-Yates)
-function shuffle(array) {
-  for (let i = array.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [array[i], array[j]] = [array[j], array[i]];
-  }
-  return array;
-}
+// function shuffle(array) {
+//   for (let i = array.length - 1; i > 0; i--) {
+//     const j = Math.floor(Math.random() * (i + 1));
+//     [array[i], array[j]] = [array[j], array[i]];
+//   }
+//   return array;
+// }
 
-function generateRandomEvents(data, numEvents) {
-  const randomizedEvents = shuffle(data);
-  return randomizedEvents.slice(0, numEvents);
-}
+// function generateRandomEvents(data, numEvents) {
+//   const randomizedEvents = shuffle(data);
+//   console.log(randomizedEvents);
+//   return randomizedEvents.slice(0, numEvents);
+// }
 
-const events = generateRandomEvents(allEvents, 4);
+// const events = generateRandomEvents(allEvents, 4);
+
+/*
+ Returns dictionary containing scenarios 1, 2, 3 for given YEAR
+ // {"Scenario1": {
+        "description": "...",
+        "options": [{...}, {...}, {...}]}
+      },
+      "Scenario2": {
+        "description": "...",
+        "options": [{...}, {...}, {...}]}
+      },
+      "Scenario3": {
+        "description": "...",
+        "options": [{...}, {...}, {...}]}
+      },
+    }
+*/
 
 function PromptPage({
   onClose,
@@ -32,7 +50,20 @@ function PromptPage({
   setHappiness,
   setIntelligence,
   setHealth,
+  year,
+  setYear,
+  setIsGameOver,
+  scenarios,
+  setScenarios,
+  scenarioCount,
+  setScenarioCount,
 }) {
+  const scenarioKey = "Scenario" + scenarioCount;
+  const curScenario = scenarios[scenarioKey];
+
+  const curScenarioDescription = curScenario["description"];
+  const curScenarioOptions = curScenario["options"];
+
   return (
     <div className="box-container">
       <div className="button-wrapper">
@@ -51,18 +82,24 @@ function PromptPage({
         </Button>
       </div>
       <div className="text-container">
-        <HeadPrompt text={prompt["young-adult"].graduation} />
+        <HeadPrompt text={curScenarioDescription} />
       </div>
 
       <div className="selection-container">
-        {events.map((event, index) => (
+        {curScenarioOptions.map((event, index) => (
           <CustomSelection
             key={index}
             {...event}
+            scenarioCount={scenarioCount}
+            year={year}
             setMoney={setMoney}
             setHappiness={setHappiness}
             setIntelligence={setIntelligence}
             setHealth={setHealth}
+            setYear={setYear}
+            setScenarioCount={setScenarioCount}
+            setIsGameOver={setIsGameOver}
+            setScenarios={setScenarios}
           />
         ))}
       </div>

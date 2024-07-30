@@ -9,6 +9,13 @@ function PromptPopup({
   setHappiness,
   setIntelligence,
   setHealth,
+  year,
+  setYear,
+  setIsGameOver,
+  scenarios,
+  setScenarios,
+  scenarioCount,
+  setScenarioCount,
 }) {
   if (!isOpen) {
     return null;
@@ -22,6 +29,13 @@ function PromptPopup({
         setHappiness={setHappiness}
         setIntelligence={setIntelligence}
         setHealth={setHealth}
+        year={year}
+        setYear={setYear}
+        setIsGameOver={setIsGameOver}
+        scenarios={scenarios}
+        setScenarios={setScenarios}
+        scenarioCount={scenarioCount}
+        setScenarioCount={setScenarioCount}
       />
     </div>
   );

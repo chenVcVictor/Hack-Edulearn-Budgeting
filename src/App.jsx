@@ -1,11 +1,12 @@
 import * as React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import { CssBaseline, Box } from "@mui/material";
+
 import GamePage from "./pages/GamePage";
 import LandingPage from "./pages/LandingPage";
 import InstructionsPage from "./pages/InstructionsPage";
+import Results from "./pages/Results";
 
 import "./global.css";
 
@@ -38,6 +39,7 @@ function App() {
               <Route path="" element={<LandingPage />} />
               <Route path="/instructions" element={<InstructionsPage />} />
               <Route path="/game" element={<GamePage />} />
+              <Route path="/results" element={<Results />} />
             </Routes>
           </Router>
         </Box>

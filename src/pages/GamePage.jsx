@@ -1,12 +1,19 @@
 import * as React from "react";
 
 import "/src/styles.css";
+import allEvents from "../db/allEvents.json";
 
 import { Box, Grid, Typography, Button, LinearProgress } from "@mui/material";
+import { Link as RouterLink, useNavigate } from "react-router-dom";
 import StatsProgressBar from "../components/StatsProgressBar";
 
 import PromptPopup from "../page/prompt/PromptPopup";
 import PromptPage from "../page/prompt/PromptPage";
+
+function getScenarios(year) {
+  const yearKey = "Year" + year;
+  return allEvents[yearKey];
+}
 
 function GamePage() {
   const backgroundUrl = "./gameAssets/Background.jpg";
@@ -23,13 +30,23 @@ function GamePage() {
   const [happiness, setHappiness] = React.useState(40);
   const [intelligence, setIntelligence] = React.useState(40);
   const [health, setHealth] = React.useState(40);
-  const [money, setMoney] = React.useState(() =>
-    randomStartAmount(5000, 50000)
-  );
+  const [money, setMoney] = React.useState(() => randomStartAmount(500, 10000));
 
   const [isPopupOpen, setIsPopupOpen] = React.useState(false);
   const openPopup = () => setIsPopupOpen(true);
   const closePopup = () => setIsPopupOpen(false);
+
+  const [scenarios, setScenarios] = React.useState(getScenarios(year));
+  const [scenarioCount, setScenarioCount] = React.useState(1);
+
+  const [isGameOver, setIsGameOver] = React.useState(false);
+  const navigate = useNavigate();
+
+  React.useEffect(() => {
+    if (isGameOver) {
+      navigate("/results");
+    }
+  }, [isGameOver, navigate]);
 
   return (
     <>
@@ -43,6 +60,13 @@ function GamePage() {
           setHappiness={setHappiness}
           setIntelligence={setIntelligence}
           setHealth={setHealth}
+          year={year}
+          setYear={setYear}
+          setIsGameOver={setIsGameOver}
+          scenarios={scenarios}
+          setScenarios={setScenarios}
+          scenarioCount={scenarioCount}
+          setScenarioCount={setScenarioCount}
         />
       </Box>
       <Box
@@ -114,7 +138,7 @@ function GamePage() {
               <img src={gameLogoUrl} alt="The Budget Challenge" />
             </Box>
 
-            {/* Age Up */}
+            {/* Events */}
             <Button
               disableRipple
               className="ageUpButton"

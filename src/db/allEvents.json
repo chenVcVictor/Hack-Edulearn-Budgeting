@@ -41,8 +41,7 @@
           "money": 0,
           "health": 0,
           "intelligence": -3,
-          "happiness": 0,
-          "isRecurring": true
+          "happiness": 0
         }
       ]
     },
@@ -92,7 +91,7 @@
       ]
     },
     "Scenario3": {
-      "description": "Expensive for food.",
+      "description": "Expenses for food.",
       "options": [
         {
           "id": 1,
@@ -132,8 +131,7 @@
           "money": 0,
           "health": -3,
           "intelligence": 0,
-          "happiness": -3,
-          "isRecurring": true
+          "happiness": -3
         }
       ]
     }
@@ -180,8 +178,7 @@
           "money": 0,
           "health": 0,
           "intelligence": 0,
-          "happiness": -1,
-          "isRecurring": true
+          "happiness": -1
         }
       ]
     },

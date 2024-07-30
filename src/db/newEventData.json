@@ -1,0 +1,63 @@
+[
+  {
+    "scenario1": [
+      {
+        "id": 1,
+        "imgUrl": "",
+        "topic": "Textbook",
+        "description": "Buy new textbooks",
+        "money": -200,
+        "health": 0,
+        "intelligence": 3,
+        "happiness": 0
+      },
+      {
+        "id": 2,
+        "imgUrl": "",
+        "topic": "Textbook",
+        "description": "Buy used textbooks",
+        "money": -120,
+        "health": 0,
+        "intelligence": 3,
+        "happiness": 0
+      },
+      {
+        "id": 3,
+        "imgUrl": "",
+        "topic": "Textbook",
+        "description": "Rent textbooks",
+        "money": -80,
+        "health": 0,
+        "intelligence": 3,
+        "happiness": 0
+      },
+      {
+        "id": 4,
+        "imgUrl": "",
+        "topic": "Textbook",
+        "description": "Don't buy Textbook",
+        "money": 0,
+        "health": 0,
+        "intelligence": -3,
+        "happiness": 0
+      }
+    ],
+    "scenario2": [],
+    "scenario3": []
+  },
+  {
+    "scenario1": ["{event1}", "{event2}", "{event3}", "{event4}"],
+    "scenario2": [],
+    "scenario3": []
+  },
+  {
+    "scenario1": [],
+    "scenario2": [],
+    "scenario3": []
+  },
+  {
+    "scenario1": [],
+    "scenario2": [],
+    "scenario3": []
+  }
+]
