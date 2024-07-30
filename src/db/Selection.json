@@ -1,0 +1,22 @@
+{
+    "young-adult": {
+        "description" : "Attend university",
+        "cost" : "-$51,456",
+        "timeline" : "(annually)"
+    },
+    "adult": {
+        "description" : "Get a job",
+        "cost" : "+$25,984",
+        "timeline" : "(annually)"
+    },
+    "nothing" : {
+        "description" : "nothing",
+        "cost" : "$0",
+        "timeline" : "none"
+    },
+    "vacation" : {
+        "description" : "Travel",
+        "cost" : "-$8,823",
+        "timeline" : "7 weeks"
+    }
+}

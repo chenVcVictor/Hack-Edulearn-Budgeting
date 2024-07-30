@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Out-of-State Public University",
+    "cost": 31700,
+    "expectedSalary": 63000
+  },
+  {
+    "name": "California State University",
+    "cost": 7372,
+    "expectedSalary": 55000
+  },
+  {
+    "name": "University of California",
+    "cost": 14371,
+    "expectedSalary": 70000
+  },
+  {
+    "name": "Ivy League",
+    "cost": 60000,
+    "expectedSalary": 84000
+  }
+]

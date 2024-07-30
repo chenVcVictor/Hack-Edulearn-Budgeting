@@ -1,0 +1,28 @@
+.text-style {
+  color: var(--main-text-color);
+  font-family: var(--main-text-font);
+}
+
+.topic-style {
+  color: var(--main-text-color);
+  font-family: var(--main-text-font);
+  font-weight: bold;
+}
+
+.button-style {
+  border-color: var(--main-border-color);
+  margin-top: 30px;
+  background-color: var(--main-button-color);
+  font-family: var(--main-text-font);
+  color: var(--main-text-color);
+  border-radius: 100px;
+}
+
+.custom-select {
+  flex: 1;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}

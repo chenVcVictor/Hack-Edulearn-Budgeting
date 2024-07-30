@@ -1,35 +1,49 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import * as React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+
+import { ThemeProvider, createTheme } from "@mui/material/styles";
+import { CssBaseline, Box } from "@mui/material";
+import GamePage from "./pages/GamePage";
+import LandingPage from "./pages/LandingPage";
+import InstructionsPage from "./pages/InstructionsPage";
+
+import "./global.css";
+
+const theme = createTheme({
+  typography: {
+    fontFamily: "Fontdiner Swanky, Arial, sans-serif",
+  },
+  components: {
+    MuiLinearProgress: {
+      styleOverrides: {
+        root: {
+          backgroundColor: "#ddd",
+        },
+        bar: {
+          backgroundColor: "#FFD60A",
+        },
+      },
+    },
+  },
+});
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <ThemeProvider theme={theme}>
+        <CssBaseline />
+        <Box sx={{ overflowX: "hidden" }}>
+          <Router>
+            <Routes>
+              <Route path="" element={<LandingPage />} />
+              <Route path="/instructions" element={<InstructionsPage />} />
+              <Route path="/game" element={<GamePage />} />
+            </Routes>
+          </Router>
+        </Box>
+      </ThemeProvider>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

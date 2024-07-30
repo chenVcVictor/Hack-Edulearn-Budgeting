@@ -1,0 +1,60 @@
+.backgroundImage {
+  background-image: var(--background-url);
+  /* background-image: url("./gameAssets/Background.jpg"); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background-attachment: static;
+}
+
+.gridContainer {
+  height: 100vh; /* Ensure the grid container takes the full viewport height */
+  display: flex;
+  flex-direction: row;
+}
+
+.ageUpButton {
+  align-items: flex-end;
+  padding: 0;
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+  position: relative;
+  top: -60px;
+}
+
+.ageUpButton img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform 0.1s ease, filter 0.1s ease;
+}
+
+.ageUpButton:hover img {
+  transform: scale(1.05);
+  filter: brightness(120%);
+}
+
+.ageUpButton:active img {
+  filter: brightness(80%);
+}
+
+.gameLogo {
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
