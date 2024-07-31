@@ -7,8 +7,8 @@ import { Box, Grid, Typography, Button, LinearProgress } from "@mui/material";
 import { Link as RouterLink, useNavigate } from "react-router-dom";
 import StatsProgressBar from "../components/StatsProgressBar";
 
-import PromptPopup from "../page/prompt/PromptPopup";
-import PromptPage from "../page/prompt/PromptPage";
+import PromptPopup from "./prompt/PromptPopup";
+import PromptPage from "./prompt/PromptPage";
 
 function getScenarios(year) {
   const yearKey = "Year" + year;
@@ -44,9 +44,11 @@ function GamePage() {
 
   React.useEffect(() => {
     if (isGameOver) {
-      navigate("/results");
+      navigate("/results", {
+        state: { money, happiness, intelligence, health },
+      });
     }
-  }, [isGameOver, navigate]);
+  }, [isGameOver, navigate, money, happiness, intelligence, health]);
 
   return (
     <>
@@ -95,7 +97,7 @@ function GamePage() {
             <Typography variant="h5">Statistics: </Typography>
             <Typography>Happiness: </Typography>
             <StatsProgressBar value={happiness} />
-            <Typography>Intelligence: </Typography>
+            <Typography>Knowledge: </Typography>
             <StatsProgressBar value={intelligence} />
             <Typography>Health: </Typography>
             <StatsProgressBar value={health} />

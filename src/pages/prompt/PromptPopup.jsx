@@ -22,7 +22,7 @@ function PromptPopup({
   }
 
   return (
-    <div className="popup-backdrop">
+    <div className={`popup-backdrop ${isOpen ? "open" : ""}`}>
       <PromptPage
         onClose={onClose}
         setMoney={setMoney}

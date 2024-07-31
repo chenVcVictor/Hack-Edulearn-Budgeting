@@ -1,9 +1,10 @@
 .box-container {
   background-color: var(--main-background-color);
   border-color: var(--main-border-color);
+  /* border: 1px solid var(--main-border-color); */
   border-radius: 3%;
-  height: 70vh;
-  width: 120vh;
+  height: 80vh;
+  width: 140vh;
   position: relative;
 }
 
@@ -12,6 +13,7 @@
   padding-top: 30px;
   text-align: center;
   font-weight: 20px;
+  font-family: "Fontdiner Swanky", Arial, sans-serif;
 }
 
 .selection-container {
@@ -19,16 +21,36 @@
 
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 8%;
   padding: 10%;
   display: flex;
   text-align: center;
+  align-items: center;
 }
 
 .button-wrapper {
   position: absolute; /* Position the wrapper absolutely */
   top: 0;
   right: 0;
+}
+
+.closeButton {
+  padding: 0;
+}
+
+.closeButton img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform 0.1s ease, filter 0.1s ease;
+}
+
+.closeButton:hover img {
+  transform: scale(1.05);
+  filter: brightness(120%);
+}
+
+.closeButton:active img {
+  filter: brightness(80%);
 }
 
 .popup-backdrop {
@@ -42,4 +64,10 @@
   justify-content: center;
   align-items: center;
   z-index: 1000;
+  /* transition: transform 0.3s ease-out;
+  transform: translateY(100%); */
 }
+
+/* .popup-backdrop.open {
+  transform: translateY(0);
+} */

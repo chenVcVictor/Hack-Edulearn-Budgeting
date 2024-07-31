@@ -8,41 +8,7 @@ import prompt from "../../db/Dialog.json";
 import selection from "../../db/Selection.json";
 import allEvents from "../../db/allEvents.json";
 
-import { Button } from "@mui/material";
-
-// shuffle array alg (Fisher-Yates)
-// function shuffle(array) {
-//   for (let i = array.length - 1; i > 0; i--) {
-//     const j = Math.floor(Math.random() * (i + 1));
-//     [array[i], array[j]] = [array[j], array[i]];
-//   }
-//   return array;
-// }
-
-// function generateRandomEvents(data, numEvents) {
-//   const randomizedEvents = shuffle(data);
-//   console.log(randomizedEvents);
-//   return randomizedEvents.slice(0, numEvents);
-// }
-
-// const events = generateRandomEvents(allEvents, 4);
-
-/*
- Returns dictionary containing scenarios 1, 2, 3 for given YEAR
- // {"Scenario1": {
-        "description": "...",
-        "options": [{...}, {...}, {...}]}
-      },
-      "Scenario2": {
-        "description": "...",
-        "options": [{...}, {...}, {...}]}
-      },
-      "Scenario3": {
-        "description": "...",
-        "options": [{...}, {...}, {...}]}
-      },
-    }
-*/
+import { Button, Typography } from "@mui/material";
 
 function PromptPage({
   onClose,
@@ -64,27 +30,18 @@ function PromptPage({
   const curScenarioDescription = curScenario["description"];
   const curScenarioOptions = curScenario["options"];
 
+  const closeButtonUrl = "/gameAssets/CloseButton.png";
+
   return (
     <div className="box-container">
       <div className="button-wrapper">
-        <Button
-          variant="contained"
-          onClick={onClose}
-          sx={{
-            borderRadius: "5% 20% 5% 5%",
-            backgroundColor: "red",
-            "&:hover": {
-              backgroundColor: "darkred",
-            },
-          }}
-        >
-          &times;
+        <Button onClick={onClose} className="closeButton">
+          <img src={closeButtonUrl} alt="Close Button"></img>
         </Button>
       </div>
-      <div className="text-container">
-        <HeadPrompt text={curScenarioDescription} />
-      </div>
-
+      <Typography variant="h5" className="text-container">
+        {"Scenario " + scenarioCount + ": " + curScenarioDescription}
+      </Typography>
       <div className="selection-container">
         {curScenarioOptions.map((event, index) => (
           <CustomSelection
