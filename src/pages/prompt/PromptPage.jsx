@@ -10,8 +10,10 @@ import allEvents from "../../db/allEvents.json";
 
 import { Button, Typography } from "@mui/material";
 
+const closeButtonUrl = "/gameAssets/CloseButton.png";
+
 function PromptPage({
-  onClose,
+  onPromptClose,
   setMoney,
   setHappiness,
   setIntelligence,
@@ -23,6 +25,9 @@ function PromptPage({
   setScenarios,
   scenarioCount,
   setScenarioCount,
+  isTransitionPopupOpen,
+  openTransitionPopupOpen,
+  closeTransitionPopupOpen,
 }) {
   const scenarioKey = "Scenario" + scenarioCount;
   const curScenario = scenarios[scenarioKey];
@@ -30,12 +35,10 @@ function PromptPage({
   const curScenarioDescription = curScenario["description"];
   const curScenarioOptions = curScenario["options"];
 
-  const closeButtonUrl = "/gameAssets/CloseButton.png";
-
   return (
     <div className="box-container">
       <div className="button-wrapper">
-        <Button onClick={onClose} className="closeButton">
+        <Button onClick={onPromptClose} className="closeButton">
           <img src={closeButtonUrl} alt="Close Button"></img>
         </Button>
       </div>
@@ -47,6 +50,7 @@ function PromptPage({
           <CustomSelection
             key={index}
             {...event}
+            onPromptClose={onPromptClose}
             scenarioCount={scenarioCount}
             year={year}
             setMoney={setMoney}
@@ -57,6 +61,9 @@ function PromptPage({
             setScenarioCount={setScenarioCount}
             setIsGameOver={setIsGameOver}
             setScenarios={setScenarios}
+            isTransitionPopupOpen={isTransitionPopupOpen}
+            openTransitionPopupOpen={openTransitionPopupOpen}
+            closeTransitionPopupOpen={closeTransitionPopupOpen}
           />
         ))}
       </div>

@@ -3,8 +3,8 @@ import "./PromptPage.css";
 import PromptPage from "./PromptPage";
 
 function PromptPopup({
-  isOpen,
-  onClose,
+  isPromptOpen,
+  onPromptClose,
   setMoney,
   setHappiness,
   setIntelligence,
@@ -16,15 +16,18 @@ function PromptPopup({
   setScenarios,
   scenarioCount,
   setScenarioCount,
+  isTransitionPopupOpen,
+  openTransitionPopupOpen,
+  closeTransitionPopupOpen,
 }) {
-  if (!isOpen) {
+  if (!isPromptOpen) {
     return null;
   }
 
   return (
-    <div className={`popup-backdrop ${isOpen ? "open" : ""}`}>
+    <div className={`popup-backdrop ${isPromptOpen ? "open" : ""}`}>
       <PromptPage
-        onClose={onClose}
+        onPromptClose={onPromptClose}
         setMoney={setMoney}
         setHappiness={setHappiness}
         setIntelligence={setIntelligence}
@@ -36,6 +39,9 @@ function PromptPopup({
         setScenarios={setScenarios}
         scenarioCount={scenarioCount}
         setScenarioCount={setScenarioCount}
+        isTransitionPopupOpen={isTransitionPopupOpen}
+        openTransitionPopupOpen={openTransitionPopupOpen}
+        closeTransitionPopupOpen={closeTransitionPopupOpen}
       />
     </div>
   );

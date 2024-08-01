@@ -9,6 +9,12 @@ import StatsProgressBar from "../components/StatsProgressBar";
 
 import PromptPopup from "./prompt/PromptPopup";
 import PromptPage from "./prompt/PromptPage";
+import TransitionPopup from "./prompt/TransitionPopup";
+
+const backgroundUrl = "./gameAssets/Background.jpg";
+const eventButtonUrl = "./gameAssets/NextEventButton.png";
+const gameLogoUrl = "./gameAssets/BudgetChallengeIcon.png";
+const moneyIconUrl = "./gameAssets/MoneyIcon.png";
 
 function getScenarios(year) {
   const yearKey = "Year" + year;
@@ -16,11 +22,6 @@ function getScenarios(year) {
 }
 
 function GamePage() {
-  const backgroundUrl = "./gameAssets/Background.jpg";
-  const eventButtonUrl = "./gameAssets/EventsButton.png";
-  const gameLogoUrl = "./gameAssets/BudgetChallengeIcon.png";
-  const moneyIconUrl = "./gameAssets/MoneyIcon.png";
-
   const randomStartAmount = (min, max) => {
     return Math.floor(Math.random() * (max - min + 1)) + min;
   };
@@ -32,9 +33,14 @@ function GamePage() {
   const [health, setHealth] = React.useState(40);
   const [money, setMoney] = React.useState(() => randomStartAmount(500, 10000));
 
-  const [isPopupOpen, setIsPopupOpen] = React.useState(false);
-  const openPopup = () => setIsPopupOpen(true);
-  const closePopup = () => setIsPopupOpen(false);
+  const [isPromptPopupOpen, setIsPromptPopupOpen] = React.useState(false);
+  const openPromptPopup = () => setIsPromptPopupOpen(true);
+  const closePromptPopup = () => setIsPromptPopupOpen(false);
+
+  const [isTransitionPopupOpen, setIsTransitionPopupOpen] =
+    React.useState(false);
+  const openTransitionPopupOpen = () => setIsTransitionPopupOpen(true);
+  const closeTransitionPopupOpen = () => setIsTransitionPopupOpen(false);
 
   const [scenarios, setScenarios] = React.useState(getScenarios(year));
   const [scenarioCount, setScenarioCount] = React.useState(1);
@@ -56,8 +62,8 @@ function GamePage() {
         sx={{ display: "flex", alignItems: "center", justifyContent: "center" }}
       >
         <PromptPopup
-          isOpen={isPopupOpen}
-          onClose={closePopup}
+          isPromptOpen={isPromptPopupOpen}
+          onPromptClose={closePromptPopup}
           setMoney={setMoney}
           setHappiness={setHappiness}
           setIntelligence={setIntelligence}
@@ -69,6 +75,15 @@ function GamePage() {
           setScenarios={setScenarios}
           scenarioCount={scenarioCount}
           setScenarioCount={setScenarioCount}
+          isTransitionPopupOpen={isTransitionPopupOpen}
+          openTransitionPopupOpen={openTransitionPopupOpen}
+          closeTransitionPopupOpen={closeTransitionPopupOpen}
+        />
+
+        <TransitionPopup
+          isPopupOpen={isTransitionPopupOpen}
+          onClose={closeTransitionPopupOpen}
+          year={year}
         />
       </Box>
       <Box
@@ -145,7 +160,7 @@ function GamePage() {
               disableRipple
               className="ageUpButton"
               onClick={() => {
-                openPopup();
+                openPromptPopup();
               }}
             >
               <img src={eventButtonUrl} alt="Event" />

@@ -6,41 +6,41 @@
         {
           "id": 1,
           "imgUrl": "",
-          "topic": "Textbook",
+          "topic": "Education",
           "description": "Buy new textbooks",
-          "money": -200,
+          "money": -400,
           "health": 0,
-          "intelligence": 3,
+          "intelligence": 8,
           "happiness": 0
         },
         {
           "id": 2,
           "imgUrl": "",
-          "topic": "Textbook",
+          "topic": "Education",
           "description": "Buy used textbooks",
-          "money": -120,
+          "money": -240,
           "health": 0,
-          "intelligence": 3,
+          "intelligence": 8,
           "happiness": 0
         },
         {
           "id": 3,
           "imgUrl": "",
-          "topic": "Textbook",
+          "topic": "Education",
           "description": "Rent textbooks",
-          "money": -80,
+          "money": -160,
           "health": 0,
-          "intelligence": 3,
+          "intelligence": 8,
           "happiness": 0
         },
         {
           "id": 4,
           "imgUrl": "",
-          "topic": "Textbook",
+          "topic": "Education",
           "description": "Don't buy textbooks",
           "money": 0,
           "health": 0,
-          "intelligence": -3,
+          "intelligence": -8,
           "happiness": 0
         }
       ]
@@ -54,9 +54,9 @@
           "topic": "Job",
           "description": "Work 40 hr/wk",
           "money": 13000,
-          "health": -8,
+          "health": -20,
           "intelligence": 0,
-          "happiness": -8
+          "happiness": -15
         },
         {
           "id": 2,
@@ -64,9 +64,9 @@
           "topic": "Job",
           "description": "Work 20 hr/wk",
           "money": 6500,
-          "health": -4,
+          "health": -10,
           "intelligence": 0,
-          "happiness": -4
+          "happiness": -8
         },
         {
           "id": 3,
@@ -74,9 +74,9 @@
           "topic": "Job",
           "description": "Work 10 hr/wk",
           "money": 3250,
-          "health": -1,
+          "health": -5,
           "intelligence": 0,
-          "happiness": -1
+          "happiness": -4
         },
         {
           "id": 4,
@@ -91,47 +91,47 @@
       ]
     },
     "Scenario3": {
-      "description": "Expenses for food.",
+      "description": "What are your expenses for food?",
       "options": [
         {
           "id": 1,
           "imgUrl": "",
-          "topic": "Meal Plan",
-          "description": "Purchase full meal plan",
-          "money": -1500,
-          "health": 5,
+          "topic": "Food",
+          "description": "Eat Out Everyday",
+          "money": -15000,
+          "health": -10,
           "intelligence": 0,
-          "happiness": 5
+          "happiness": 10
         },
         {
           "id": 2,
           "imgUrl": "",
-          "topic": "Meal Plan",
-          "description": "Purchase partial meal plan",
-          "money": -800,
-          "health": 3,
+          "topic": "Food",
+          "description": "Purchase a Meal Plan",
+          "money": -6260,
+          "health": -5,
           "intelligence": 0,
-          "happiness": 3
+          "happiness": 5
         },
         {
           "id": 3,
           "imgUrl": "",
-          "topic": "Meal Plan",
+          "topic": "Food",
           "description": "Cook own meals",
-          "money": -400,
-          "health": 2,
+          "money": -4500,
+          "health": 5,
           "intelligence": 0,
-          "happiness": 2
+          "happiness": -5
         },
         {
           "id": 4,
           "imgUrl": "",
-          "topic": "Meal Plan",
-          "description": "Don't buy meal plan",
-          "money": 0,
-          "health": -3,
+          "topic": "Food",
+          "description": "Eat Instant Noodles & Junk Food",
+          "money": -1500,
+          "health": -20,
           "intelligence": 0,
-          "happiness": -3
+          "happiness": -10
         }
       ]
     }
@@ -146,9 +146,9 @@
           "topic": "Housing",
           "description": "Live on-campus",
           "money": -5000,
-          "health": 3,
+          "health": 6,
           "intelligence": 0,
-          "happiness": 5
+          "happiness": 8
         },
         {
           "id": 2,
@@ -156,9 +156,9 @@
           "topic": "Housing",
           "description": "Live off-campus with roommates",
           "money": -3000,
-          "health": 2,
+          "health": 4,
           "intelligence": 0,
-          "happiness": 4
+          "happiness": 8
         },
         {
           "id": 3,
@@ -166,9 +166,9 @@
           "topic": "Housing",
           "description": "Live off-campus alone",
           "money": -4000,
-          "health": 1,
+          "health": 2,
           "intelligence": 0,
-          "happiness": 3
+          "happiness": 5
         },
         {
           "id": 4,
@@ -178,7 +178,7 @@
           "money": 0,
           "health": 0,
           "intelligence": 0,
-          "happiness": -1
+          "happiness": -5
         }
       ]
     },
@@ -189,7 +189,7 @@
           "id": 1,
           "imgUrl": "",
           "topic": "Internship",
-          "description": "Intern unpaid",
+          "description": "Work an unpaid internship",
           "money": 0,
           "health": -2,
           "intelligence": 4,
@@ -198,22 +198,22 @@
         {
           "id": 2,
           "imgUrl": "",
-          "topic": "Internship",
-          "description": "Intern paid",
+          "topic": "Work",
+          "description": "Work a summer job",
           "money": 5000,
-          "health": -3,
-          "intelligence": 4,
-          "happiness": 2
+          "health": -2,
+          "intelligence": 1,
+          "happiness": 1
         },
         {
           "id": 3,
           "imgUrl": "",
-          "topic": "Internship",
-          "description": "No internship",
+          "topic": "Relax",
+          "description": "Take a break",
           "money": 0,
-          "health": 0,
+          "health": 10,
           "intelligence": 0,
-          "happiness": 0
+          "happiness": 10
         }
       ]
     },
@@ -227,18 +227,18 @@
           "description": "Study abroad for a semester",
           "money": -7000,
           "health": 0,
-          "intelligence": 5,
-          "happiness": 5
+          "intelligence": 7,
+          "happiness": 7
         },
         {
           "id": 2,
           "imgUrl": "",
           "topic": "Study Abroad",
           "description": "Participate in a summer program abroad",
-          "money": -3000,
+          "money": -4000,
           "health": 0,
           "intelligence": 4,
-          "happiness": 4
+          "happiness": 5
         },
         {
           "id": 3,
@@ -260,19 +260,19 @@
         {
           "id": 1,
           "imgUrl": "",
-          "topic": "Extracurricular Activities",
-          "description": "Join a sports team",
-          "money": -500,
-          "health": 4,
-          "intelligence": 1,
-          "happiness": 4
+          "topic": "Mentorship",
+          "description": "Mentor younger students or peers",
+          "money": 0,
+          "health": 0,
+          "intelligence": 3,
+          "happiness": 2
         },
         {
           "id": 2,
           "imgUrl": "",
           "topic": "Extracurricular Activities",
           "description": "Join a club",
-          "money": -200,
+          "money": -300,
           "health": 2,
           "intelligence": 2,
           "happiness": 3
@@ -280,7 +280,7 @@
         {
           "id": 3,
           "imgUrl": "",
-          "topic": "Extracurricular Activities",
+          "topic": "Volunteer",
           "description": "Participate in community service",
           "money": -100,
           "health": 3,
@@ -290,13 +290,12 @@
         {
           "id": 4,
           "imgUrl": "",
-          "topic": "Extracurricular Activities",
+          "topic": "Study",
           "description": "Focus solely on academics",
           "money": 0,
           "health": 0,
-          "intelligence": 0,
-          "happiness": -2,
-          "isRecurring": true
+          "intelligence": 2,
+          "happiness": -5
         }
       ]
     },
@@ -309,7 +308,7 @@
           "topic": "Research",
           "description": "Engage in research project",
           "money": 0,
-          "health": -1,
+          "health": -3,
           "intelligence": 5,
           "happiness": 2
         },
@@ -341,8 +340,8 @@
         {
           "id": 1,
           "imgUrl": "",
-          "topic": "Summer Plans",
-          "description": "Attend a summer school",
+          "topic": "Education",
+          "description": "Attend summer classes",
           "money": -3000,
           "health": 0,
           "intelligence": 4,
@@ -351,7 +350,7 @@
         {
           "id": 2,
           "imgUrl": "",
-          "topic": "Summer Plans",
+          "topic": "Vacation",
           "description": "Travel and explore",
           "money": -2000,
           "health": 3,
@@ -361,23 +360,22 @@
         {
           "id": 3,
           "imgUrl": "",
-          "topic": "Summer Plans",
-          "description": "Work a summer job",
-          "money": 3000,
-          "health": -2,
-          "intelligence": 1,
-          "happiness": 1
+          "topic": "Internship",
+          "description": "Work a Paid Internship",
+          "money": 5000,
+          "health": -3,
+          "intelligence": 4,
+          "happiness": 2
         },
         {
           "id": 4,
           "imgUrl": "",
-          "topic": "Summer Plans",
-          "description": "Relax and take a break",
+          "topic": "Relax",
+          "description": "Take a break",
           "money": 0,
-          "health": 2,
+          "health": 4,
           "intelligence": 0,
-          "happiness": 4,
-          "isRecurring": true
+          "happiness": 10
         }
       ]
     }
@@ -419,7 +417,7 @@
       ]
     },
     "Scenario2": {
-      "description": "Choices for entering the job market.",
+      "description": "Preparing for Plans after graduation",
       "options": [
         {
           "id": 1,
@@ -427,24 +425,24 @@
           "topic": "Job Search",
           "description": "Apply for full-time positions",
           "money": 0,
-          "health": -2,
-          "intelligence": 4,
-          "happiness": -1
+          "health": -10,
+          "intelligence": 5,
+          "happiness": -6
         },
         {
           "id": 2,
           "imgUrl": "",
-          "topic": "Job Search",
-          "description": "Attend career fairs",
-          "money": 0,
-          "health": -1,
-          "intelligence": 3,
-          "happiness": 1
+          "topic": "Party",
+          "description": "Live Life and Party",
+          "money": -500,
+          "health": -5,
+          "intelligence": -10,
+          "happiness": 15
         },
         {
           "id": 3,
           "imgUrl": "",
-          "topic": "Job Search",
+          "topic": "Travel",
           "description": "Take a gap year to travel or explore",
           "money": -5000,
           "health": 2,
@@ -469,7 +467,7 @@
         {
           "id": 2,
           "imgUrl": "",
-          "topic": "Further Education",
+          "topic": "Certification",
           "description": "Enroll in a certification course",
           "money": -3000,
           "health": 0,
@@ -479,7 +477,7 @@
         {
           "id": 3,
           "imgUrl": "",
-          "topic": "Further Education",
+          "topic": "Workforce",
           "description": "Enter the workforce immediately",
           "money": 0,
           "health": 0,
@@ -489,13 +487,12 @@
         {
           "id": 4,
           "imgUrl": "",
-          "topic": "Further Education",
+          "topic": "Break",
           "description": "Take time off before deciding",
           "money": 0,
-          "health": 1,
+          "health": 4,
           "intelligence": 0,
-          "happiness": 3,
-          "isRecurring": true
+          "happiness": 10
         }
       ]
     }

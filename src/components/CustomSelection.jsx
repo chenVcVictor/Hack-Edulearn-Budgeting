@@ -25,13 +25,47 @@ function validateStats(prevStat, increment) {
 }
 
 // ensures 1 <= scenarioCount <= 3 given there are only 3 scenarios per year
-function validateScenarioCount(scenarioCount, year, setYear, setScenarios) {
-  if (scenarioCount < 3) {
-    return scenarioCount + 1;
+// function handleScenarioCount(
+//   scenarioCount,
+//   year,
+//   setYear,
+//   setScenarios,
+//   onPromptClose,
+//   isTransitionPopupOpen,
+//   openTransitionPopupOpen,
+//   closeTransitionPopupOpen
+// ) {
+//   if (scenarioCount < 3) {
+//     return scenarioCount + 1;
+//   } else {
+//     setYear((prevYear) => prevYear + 1);
+//     setScenarios(() => getScenarios(year + 1));
+//     return 1;
+//   }
+// }
+
+function handleScenarioTransition(
+  scenarioCount,
+  year,
+  setScenarioCount,
+  setYear,
+  setIsGameOver,
+  setScenarios,
+  closePromptPopup,
+  isTransitionPopupOpen,
+  openTransitionPopupOpen,
+  closeTransitionPopupOpen
+) {
+  if (year == 4 && scenarioCount == 3) {
+    setIsGameOver(() => true);
+  } else if (scenarioCount < 3) {
+    setScenarioCount((prevCount) => prevCount + 1);
   } else {
     setYear((prevYear) => prevYear + 1);
+    setScenarioCount(() => 1);
     setScenarios(() => getScenarios(year + 1));
-    return 1;
+    closePromptPopup();
+    openTransitionPopupOpen();
   }
 }
 
@@ -47,6 +81,10 @@ function handleSelectClick(
   setYear,
   setIsGameOver,
   setScenarios,
+  closePromptPopup,
+  isTransitionPopupOpen,
+  openTransitionPopupOpen,
+  closeTransitionPopupOpen,
   data
 ) {
   setMoney((prevMoney) => prevMoney + data.money);
@@ -55,16 +93,23 @@ function handleSelectClick(
     validateStats(prevIntelligence, data.intelligence)
   );
   setHealth((prevHealth) => validateStats(prevHealth, data.health));
-  if (scenarioCount == 3 && year == 4) {
-    setIsGameOver(() => true);
-  } else {
-    setScenarioCount((prevScenarioCount) =>
-      validateScenarioCount(prevScenarioCount, year, setYear, setScenarios)
-    );
-  }
+
+  handleScenarioTransition(
+    scenarioCount,
+    year,
+    setScenarioCount,
+    setYear,
+    setIsGameOver,
+    setScenarios,
+    closePromptPopup,
+    isTransitionPopupOpen,
+    openTransitionPopupOpen,
+    closeTransitionPopupOpen
+  );
 }
 
 function CustomSelection({
+  onPromptClose,
   scenarioCount,
   year,
   setMoney,
@@ -75,6 +120,9 @@ function CustomSelection({
   setYear,
   setIsGameOver,
   setScenarios,
+  isTransitionPopupOpen,
+  openTransitionPopupOpen,
+  closeTransitionPopupOpen,
   ...data
 }) {
   return (
@@ -102,7 +150,12 @@ function CustomSelection({
       </Box>
       <Typography> {data.topic} </Typography>
       <div className="text-style">{data.description}</div>
-      <div className="text-style">Money: ${data.money}</div>
+      <Typography
+        className="text-style"
+        style={{ color: data.money >= 0 ? "green" : "red" }}
+      >
+        Money: ${data.money}
+      </Typography>
       <Box
         sx={{
           marginTop: "auto", // Pushes the button to the bottom
@@ -126,6 +179,10 @@ function CustomSelection({
               setYear,
               setIsGameOver,
               setScenarios,
+              onPromptClose,
+              isTransitionPopupOpen,
+              openTransitionPopupOpen,
+              closeTransitionPopupOpen,
               data
             )
           }

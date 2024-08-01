@@ -11,6 +11,8 @@
 .text-container {
   /* border: 3px solid green; */
   padding-top: 30px;
+  margin-left: 100px;
+  margin-right: 100px;
   text-align: center;
   font-weight: 20px;
   font-family: "Fontdiner Swanky", Arial, sans-serif;
