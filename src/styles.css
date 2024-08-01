@@ -27,9 +27,7 @@
 }
 
 .ageUpButton img {
-  display: block;
   width: 100%;
-  height: auto;
   transition: transform 0.1s ease, filter 0.1s ease;
 }
 

@@ -1,5 +1,6 @@
 import React from "react";
 import "./CustomSelection.css";
+import "/src/styles.css";
 
 import { Box, Button, Typography } from "@mui/material";
 
@@ -130,10 +131,12 @@ function CustomSelection({
     <Box
       sx={{
         display: "flex",
-        flexDirection: "column", // Stack children vertically
-        alignItems: "center", // Center items horizontally
-        justifyContent: "center", // Center items vertically
-        position: "relative", // Allow absolute positioning of button
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "space-between",
+        height: "400px",
+        minWidth: "200px",
+        position: "relative",
       }}
     >
       <Box
@@ -165,7 +168,7 @@ function CustomSelection({
         }}
       >
         <Button
-          sx={{}}
+          className="ageUpButton"
           disableRipple
           onClick={() =>
             handleSelectClick(
