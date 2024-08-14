@@ -146,7 +146,7 @@ function CustomSelection({
         }}
       >
         <img
-          src={someRandomImage}
+          src={data.imgUrl}
           alt="selection image"
           style={{ height: "100%", width: "100%", objectFit: "cover" }}
         ></img>
@@ -157,7 +157,10 @@ function CustomSelection({
         className="text-style"
         style={{ color: data.money >= 0 ? "green" : "red" }}
       >
-        Money: ${data.money}
+        Money: {data.money >= 0 
+        ? `\$${data.money}`:
+          `- \$${Math.abs(data.money)}`
+          } 
       </Typography>
       <Box
         sx={{
