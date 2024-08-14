@@ -134,7 +134,8 @@ function GamePage() {
                 }}
               >
                 <Typography variant="subtitle1">
-                  Money: <br />${money}
+                  Money: <br />
+                  {money >= 0 ? `\$${money}` : `- \$${Math.abs(money)}`}
                 </Typography>
               </Box>
             </Box>
