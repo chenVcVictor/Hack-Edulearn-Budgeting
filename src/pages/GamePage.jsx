@@ -15,6 +15,7 @@ const backgroundUrl = "./gameAssets/Background.jpg";
 const eventButtonUrl = "./gameAssets/NextEventButton.png";
 const gameLogoUrl = "./gameAssets/BudgetChallengeIcon.png";
 const moneyIconUrl = "./gameAssets/MoneyIcon.png";
+const mainCharacterUrl = "./gameAssets/Character.png";
 
 function getScenarios(year) {
   const yearKey = "Year" + year;
@@ -156,6 +157,13 @@ function GamePage() {
               <img src={gameLogoUrl} alt="The Budget Challenge" />
             </Box>
 
+            <Box className="mainCharacter">
+              <img
+                src={mainCharacterUrl}
+                alt="Main Character"
+                style={{ width: "300px", height: "auto" }}
+              />
+            </Box>
             {/* Events */}
             <Button
               disableRipple

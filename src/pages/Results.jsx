@@ -12,7 +12,7 @@ const backgroundUrl = "./gameAssets/Background.jpg";
 const moneyIconUrl = "./gameAssets/MoneyIcon.png";
 const replayButtonUrl = "./gameAssets/ReplayButton.png";
 
-const mainCharacterUrl = "./gameAssets/StrawberryMainCharacter.png";
+const mainCharacterUrl = "./gameAssets/CharacterGraduated.png";
 
 function Results() {
   const savedState = useLocation();
@@ -31,13 +31,12 @@ function Results() {
         >
           Results
         </Typography>
-        <Box sx={{ height: "40px" }}></Box>
         <Grid container alignItems="center">
           <Grid item xs={5}>
             <img
               src={mainCharacterUrl}
-              alt="Money Icon"
-              style={{ height: "auto", width: "250px" }}
+              alt="Main Character"
+              style={{ height: "300px", width: "250px" }}
             />
           </Grid>
           <Grid item xs={7}>
